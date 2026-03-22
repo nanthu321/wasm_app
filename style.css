@@ -1,0 +1,126 @@
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+
+#container > h1 {
+    text-align: center;
+    color: #1a1a1a;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+
+#container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    max-width: 900px;
+    padding: 20px;
+}
+
+
+.model {
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    width: 320px;
+    transition: transform 0.2s;
+}
+
+.model:hover {
+    transform: translateY(-5px);
+}
+
+
+.model h1 {
+    font-size: 1.2rem;
+    color: #444;
+    text-align: center;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+}
+
+
+#time1, #time2 {
+    font-weight: bold;
+    color: #ff5722;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: right;
+    margin: 0;
+}
+
+
+.input-group {
+    margin: 15px 0;
+}
+
+label {
+    display: block;
+    font-size: 0.85rem;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box; 
+    font-size: 1rem;
+}
+
+
+.result-box {
+    background: #f9f9f9;
+    border: 1px dashed #bbb;
+    border-radius: 8px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.result-box p {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #2e7d32;
+    margin: 0;
+}
+
+
+button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background-color: #2196f3;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #1976d2;
+}
+
+
+.model:last-of-type button {
+    background-color: #673ab7;
+}
+
+.model:last-of-type button:hover {
+    background-color: #512da8;
+}

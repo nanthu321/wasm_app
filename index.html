@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WASM APP</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="container">
+       <h1>Minimum Value Finder: JS & WASM Comparison</h1>
+        <div class="model">
+           <p id="time1">Time </p>
+            <div>
+                <h1>USING JS</h1>
+                <div class="input-group">
+                    <label for="number1">Enter the number 1 : </label>
+                    <input type="number" name="number1" id="input-num1">
+                </div>
+
+                <div class="input-group">
+                    <label for="number2">Enter the number 2 : </label>
+                    <input type="number" name="number2" id="input-num2">
+                </div>
+
+                <div class="result-box">
+                    <p id="result1"></p>
+                </div>
+                <button id="btnJsFind">Find</button>
+            </div>
+        </div>
+
+
+        <div class="model">
+            <p id="time2">Time : </p>
+            <div>
+                <h1>USING WASM</h1>
+                <div class="input-group">
+                    <label for="number1">Enter the number 1 : </label>
+                    <input type="number" name="number1" id="input-num3">
+                </div>
+
+                <div class="input-group">
+                    <label for="number2">Enter the number 2 : </label>
+                    <input type="number" name="number2" id="input-num4">
+                </div>
+                
+                <div class="result-box">
+                    <p id="result2"></p>
+                </div>
+                
+                <button id="btnWasmFind">Find</button>
+            </div>
+        </div>
+        
+    </div>
+    <script src="script.js" defer></script>
+</body>
+</html>
