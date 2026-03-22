@@ -72,7 +72,7 @@
         (loop $myLoop
             local.get $n1 ;; push n1 into stack , so [n1]
             local.get $n2 ;; push n2 into stack, so [n1,n2]
-            i32.gt_s ;; its it pop the two value and compare if its true push 1 into stack or 0
+            i32.lt_s ;; its it pop the two value and compare if its true push 1 into stack or 0
 
             (if (result i32) ;; its pop the stack value if 1 means true 0 means false
                 (then local.get $n1) ;; if true n1 is min, so push n1 into stack [n1]
